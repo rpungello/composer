@@ -2,6 +2,7 @@
   "name": "rpungello/composer",
   "homepage": "https://composer.rpun.dev",
   "repositories": [
+    { "type": "vcs", "url": "https://github.com/rpungello/changelog-parser" }
   ],
   "require-all": true
 }
