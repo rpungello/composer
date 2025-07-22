@@ -1,6 +1,6 @@
 {
   "name": "rpungello/composer",
-  "homepage": "https://composer.rpun.io",
+  "homepage": "https://composer.rpun.dev",
   "repositories": [
   ],
   "require-all": true
