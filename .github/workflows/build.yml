@@ -1,0 +1,31 @@
+name: Build package repository
+on:
+  push:
+  # Allow external repositories to trigger builds
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: php-actions/composer@v6
+        with:
+          php_version: "7.4"
+          version: 1
+
+      - name: Configure access token
+        run: composer -g config github-oauth.github.com ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build package repository
+        run: vendor/bin/satis build satis.json public
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          cname: composer.rpun.io
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
