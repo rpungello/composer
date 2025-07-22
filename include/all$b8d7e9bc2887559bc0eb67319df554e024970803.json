@@ -75,19 +75,19 @@
                     }
                 ]
             },
-            "dev-main": {
+            "1.1.0": {
                 "name": "rpungello/changelog-parser",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "1.1.0",
+                "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/rpungello/changelog-parser.git",
-                    "reference": "97981caa0c8c474e1766f25d7346a14ca8dbf85d"
+                    "reference": "b2ca4ad4521560a972047f8434ad8f3c4354d887"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/rpungello/changelog-parser/zipball/97981caa0c8c474e1766f25d7346a14ca8dbf85d",
-                    "reference": "97981caa0c8c474e1766f25d7346a14ca8dbf85d",
+                    "url": "https://api.github.com/repos/rpungello/changelog-parser/zipball/b2ca4ad4521560a972047f8434ad8f3c4354d887",
+                    "reference": "b2ca4ad4521560a972047f8434ad8f3c4354d887",
                     "shasum": ""
                 },
                 "require": {
@@ -98,7 +98,81 @@
                     "pestphp/pest": "^2.0|^3.0",
                     "spatie/ray": "^1.28"
                 },
-                "time": "2025-07-22T17:32:47+00:00",
+                "time": "2025-07-22T17:49:50+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\": "src"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\Tests\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Parses CHANGELOG.md files",
+                "homepage": "https://github.com/rpungello/changelog-parser",
+                "keywords": [
+                    "changelog",
+                    "parser",
+                    "rpungello"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/changelog-parser/tree/1.1.0",
+                    "issues": "https://github.com/rpungello/changelog-parser/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/rpungello"
+                    }
+                ]
+            },
+            "dev-main": {
+                "name": "rpungello/changelog-parser",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/changelog-parser.git",
+                    "reference": "81316d627cc96d5a1684b4538bc1e02987a34de3"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/changelog-parser/zipball/81316d627cc96d5a1684b4538bc1e02987a34de3",
+                    "reference": "81316d627cc96d5a1684b4538bc1e02987a34de3",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.1"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "pestphp/pest": "^2.0|^3.0",
+                    "spatie/ray": "^1.28"
+                },
+                "time": "2025-07-22T17:54:05+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
