@@ -3,7 +3,8 @@
   "homepage": "https://composer.rpun.dev",
   "repositories": [
     { "type": "vcs", "url": "https://github.com/rpungello/changelog-parser" },
-    { "type": "vcs", "url": "https://github.com/rpungello/laravel-graylog" }
+    { "type": "vcs", "url": "https://github.com/rpungello/laravel-graylog" },
+    { "type": "vcs", "url": "https://github.com/rpungello/laravel-metabase" }
   ],
   "require-all": true
 }
