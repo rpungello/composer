@@ -4,7 +4,8 @@
   "repositories": [
     { "type": "vcs", "url": "https://github.com/rpungello/changelog-parser" },
     { "type": "vcs", "url": "https://github.com/rpungello/laravel-graylog" },
-    { "type": "vcs", "url": "https://github.com/rpungello/laravel-metabase" }
+    { "type": "vcs", "url": "https://github.com/rpungello/laravel-metabase" },
+    { "type": "vcs", "url": "https://github.com/rpungello/draining-health-check" }
   ],
   "require-all": true
 }
