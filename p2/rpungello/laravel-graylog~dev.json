@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/rpungello/laravel-graylog.git",
-                    "reference": "28ceb3e12eb47766376252b377fe511534f14253"
+                    "reference": "8a41771c4f28cf305a5fa3b80a1230769af41701"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/rpungello/laravel-graylog/zipball/28ceb3e12eb47766376252b377fe511534f14253",
-                    "reference": "28ceb3e12eb47766376252b377fe511534f14253",
+                    "url": "https://api.github.com/repos/rpungello/laravel-graylog/zipball/8a41771c4f28cf305a5fa3b80a1230769af41701",
+                    "reference": "8a41771c4f28cf305a5fa3b80a1230769af41701",
                     "shasum": ""
                 },
                 "require": {
@@ -29,7 +29,7 @@
                     "pestphp/pest-plugin-arch": "^4.0",
                     "pestphp/pest-plugin-laravel": "^4.0"
                 },
-                "time": "2026-06-30T14:14:34+00:00",
+                "time": "2026-06-30T18:28:46+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
