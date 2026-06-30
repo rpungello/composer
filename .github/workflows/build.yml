@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-        with:
-          ref: main
       - name: Build Satis package repository
         uses: addnab/docker-run-action@v3
         with:
