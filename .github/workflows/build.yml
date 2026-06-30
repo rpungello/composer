@@ -21,7 +21,7 @@ jobs:
           docker run --rm \
           --user "$(id -u):$(id -g)" \
           -v $WORKSPACE_PATH:/build \
-          -e GITHUB_TOKEN="${GITHUB_TOKEN}" \
+          -e COMPOSER_AUTH='{"github-oauth": {"github.com": "${GITHUB_TOKEN}"}}' \
           ghcr.io/composer/satis:latest
       - name: Verify build output
         run: ls -la ${{ github.workspace }}
