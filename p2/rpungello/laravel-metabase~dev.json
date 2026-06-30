@@ -1,0 +1,423 @@
+{
+    "packages": {
+        "rpungello/laravel-metabase": [
+            {
+                "name": "rpungello/laravel-metabase",
+                "version": "dev-dependabot/github_actions/actions/checkout-7",
+                "version_normalized": "dev-dependabot/github_actions/actions/checkout-7",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-metabase.git",
+                    "reference": "ae4358320e8d1be964c9e1e5af7bd5a725e51e39"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-metabase/zipball/ae4358320e8d1be964c9e1e5af7bd5a725e51e39",
+                    "reference": "ae4358320e8d1be964c9e1e5af7bd5a725e51e39",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0",
+                    "php": "^8.3",
+                    "spatie/laravel-data": "^4.17",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2026-06-22T18:04:08+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Metabase\\MetabaseServiceProvider"
+                        ],
+                        "aliases": {
+                            "Metabase": "Rpungello\\Metabase\\Facades\\Metabase"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Metabase\\": "src/",
+                        "Rpungello\\Metabase\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Metabase\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Metabase integration for Laravel apps",
+                "homepage": "https://github.com/rpungello/laravel-metabase",
+                "keywords": [
+                    "Rob Pungello",
+                    "integration",
+                    "laravel",
+                    "metabase",
+                    "reporting",
+                    "sdk"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-metabase/tree/dependabot/github_actions/actions/checkout-7",
+                    "issues": "https://github.com/rpungello/laravel-metabase/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-metabase",
+                "version": "dev-dependabot/github_actions/dependabot/fetch-metadata-3.1.0",
+                "version_normalized": "dev-dependabot/github_actions/dependabot/fetch-metadata-3.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-metabase.git",
+                    "reference": "f2d08a302b0ccd1d781f112bb23bb4585492b278"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-metabase/zipball/f2d08a302b0ccd1d781f112bb23bb4585492b278",
+                    "reference": "f2d08a302b0ccd1d781f112bb23bb4585492b278",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0",
+                    "php": "^8.3",
+                    "spatie/laravel-data": "^4.17",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2026-04-20T20:26:10+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Metabase\\MetabaseServiceProvider"
+                        ],
+                        "aliases": {
+                            "Metabase": "Rpungello\\Metabase\\Facades\\Metabase"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Metabase\\": "src/",
+                        "Rpungello\\Metabase\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Metabase\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Metabase integration for Laravel apps",
+                "homepage": "https://github.com/rpungello/laravel-metabase",
+                "keywords": [
+                    "Rob Pungello",
+                    "integration",
+                    "laravel",
+                    "metabase",
+                    "reporting",
+                    "sdk"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-metabase/tree/dependabot/github_actions/dependabot/fetch-metadata-3.1.0",
+                    "issues": "https://github.com/rpungello/laravel-metabase/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-metabase",
+                "version": "dev-dependabot/github_actions/stefanzweifel/git-auto-commit-action-7",
+                "version_normalized": "dev-dependabot/github_actions/stefanzweifel/git-auto-commit-action-7",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-metabase.git",
+                    "reference": "4b805c4e6569dadba4757bee33e7c6e6f897335c"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-metabase/zipball/4b805c4e6569dadba4757bee33e7c6e6f897335c",
+                    "reference": "4b805c4e6569dadba4757bee33e7c6e6f897335c",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0",
+                    "php": "^8.3",
+                    "spatie/laravel-data": "^4.17",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2025-10-13T18:52:59+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Metabase\\MetabaseServiceProvider"
+                        ],
+                        "aliases": {
+                            "Metabase": "Rpungello\\Metabase\\Facades\\Metabase"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Metabase\\": "src/",
+                        "Rpungello\\Metabase\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Metabase\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Metabase integration for Laravel apps",
+                "homepage": "https://github.com/rpungello/laravel-metabase",
+                "keywords": [
+                    "Rob Pungello",
+                    "integration",
+                    "laravel",
+                    "metabase",
+                    "reporting",
+                    "sdk"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-metabase/tree/dependabot/github_actions/stefanzweifel/git-auto-commit-action-7",
+                    "issues": "https://github.com/rpungello/laravel-metabase/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-metabase",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-metabase.git",
+                    "reference": "fb568261fafe4c1ce90835adc3ac4a26cde84c96"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-metabase/zipball/fb568261fafe4c1ce90835adc3ac4a26cde84c96",
+                    "reference": "fb568261fafe4c1ce90835adc3ac4a26cde84c96",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0",
+                    "php": "^8.3",
+                    "spatie/laravel-data": "^4.17",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2026-01-05T18:57:59+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Metabase\\MetabaseServiceProvider"
+                        ],
+                        "aliases": {
+                            "Metabase": "Rpungello\\Metabase\\Facades\\Metabase"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Metabase\\": "src/",
+                        "Rpungello\\Metabase\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Metabase\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Metabase integration for Laravel apps",
+                "homepage": "https://github.com/rpungello/laravel-metabase",
+                "keywords": [
+                    "Rob Pungello",
+                    "integration",
+                    "laravel",
+                    "metabase",
+                    "reporting",
+                    "sdk"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-metabase/tree/main",
+                    "issues": "https://github.com/rpungello/laravel-metabase/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            }
+        ]
+    }
+}

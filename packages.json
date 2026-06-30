@@ -1,0 +1,15 @@
+{
+    "packages": [],
+    "includes": {
+        "include/all$0ad06ee523c94944446b6ecdf7a2a45a1650b43d.json": {
+            "sha1": "0ad06ee523c94944446b6ecdf7a2a45a1650b43d"
+        }
+    },
+    "metadata-url": "/p2/%package%.json",
+    "available-packages": [
+        "rpungello/changelog-parser",
+        "rpungello/draining-health-check",
+        "rpungello/laravel-graylog",
+        "rpungello/laravel-metabase"
+    ]
+}

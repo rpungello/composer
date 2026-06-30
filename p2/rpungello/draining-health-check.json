@@ -1,0 +1,321 @@
+{
+    "packages": {
+        "rpungello/draining-health-check": [
+            {
+                "name": "rpungello/draining-health-check",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/draining-health-check.git",
+                    "reference": "3a33ec491d0b800e74fcd1efe927be7becf8e56c"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/draining-health-check/zipball/3a33ec491d0b800e74fcd1efe927be7becf8e56c",
+                    "reference": "3a33ec491d0b800e74fcd1efe927be7becf8e56c",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0",
+                    "php": "^8.4",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "larastan/larastan": "^3.0",
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0",
+                    "phpstan/extension-installer": "^1.4",
+                    "phpstan/phpstan-deprecation-rules": "^2.0",
+                    "phpstan/phpstan-phpunit": "^2.0",
+                    "spatie/laravel-health": "^1.37"
+                },
+                "time": "2026-02-17T14:12:04+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\DrainingHealthCheck\\DrainingHealthCheckServiceProvider"
+                        ],
+                        "aliases": {
+                            "DrainingHealthCheck": "Rpungello\\DrainingHealthCheck\\Facades\\DrainingHealthCheck"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\DrainingHealthCheck\\": "src/",
+                        "Rpungello\\DrainingHealthCheck\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\DrainingHealthCheck\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Health check for spatie/laravel-health that checks whether the current instance is draining connections",
+                "homepage": "https://github.com/rpungello/draining-health-check",
+                "keywords": [
+                    "Rob Pungello",
+                    "draining-health-check",
+                    "laravel"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/draining-health-check/tree/1.0.0",
+                    "issues": "https://github.com/rpungello/draining-health-check/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/draining-health-check",
+                "version": "1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/draining-health-check.git",
+                    "reference": "4314051e003af9bc9d8ffdf71c9b8929f3390fe3"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/draining-health-check/zipball/4314051e003af9bc9d8ffdf71c9b8929f3390fe3",
+                    "reference": "4314051e003af9bc9d8ffdf71c9b8929f3390fe3",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0",
+                    "php": "^8.4",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "larastan/larastan": "^3.0",
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0",
+                    "phpstan/extension-installer": "^1.4",
+                    "phpstan/phpstan-deprecation-rules": "^2.0",
+                    "phpstan/phpstan-phpunit": "^2.0",
+                    "spatie/laravel-health": "^1.37"
+                },
+                "time": "2026-02-17T14:34:12+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\DrainingHealthCheck\\DrainingHealthCheckServiceProvider"
+                        ],
+                        "aliases": {
+                            "DrainingHealthCheck": "Rpungello\\DrainingHealthCheck\\Facades\\DrainingHealthCheck"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\DrainingHealthCheck\\": "src/",
+                        "Rpungello\\DrainingHealthCheck\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\DrainingHealthCheck\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Health check for spatie/laravel-health that checks whether the current instance is draining connections",
+                "homepage": "https://github.com/rpungello/draining-health-check",
+                "keywords": [
+                    "Rob Pungello",
+                    "draining-health-check",
+                    "laravel"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/draining-health-check/tree/1.0.1",
+                    "issues": "https://github.com/rpungello/draining-health-check/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/draining-health-check",
+                "version": "1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/draining-health-check.git",
+                    "reference": "23a58f3602bf1279bc59bbbddb9e568da6e65400"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/draining-health-check/zipball/23a58f3602bf1279bc59bbbddb9e568da6e65400",
+                    "reference": "23a58f3602bf1279bc59bbbddb9e568da6e65400",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0||^13.0",
+                    "php": "^8.4",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "larastan/larastan": "^3.0",
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^11.0.0||^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0",
+                    "phpstan/extension-installer": "^1.4",
+                    "phpstan/phpstan-deprecation-rules": "^2.0",
+                    "phpstan/phpstan-phpunit": "^2.0",
+                    "spatie/laravel-health": "^1.37"
+                },
+                "time": "2026-03-24T19:17:21+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\DrainingHealthCheck\\DrainingHealthCheckServiceProvider"
+                        ],
+                        "aliases": {
+                            "DrainingHealthCheck": "Rpungello\\DrainingHealthCheck\\Facades\\DrainingHealthCheck"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\DrainingHealthCheck\\": "src/",
+                        "Rpungello\\DrainingHealthCheck\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\DrainingHealthCheck\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Health check for spatie/laravel-health that checks whether the current instance is draining connections",
+                "homepage": "https://github.com/rpungello/draining-health-check",
+                "keywords": [
+                    "Rob Pungello",
+                    "draining-health-check",
+                    "laravel"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/draining-health-check/tree/1.1.0",
+                    "issues": "https://github.com/rpungello/draining-health-check/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            }
+        ]
+    }
+}

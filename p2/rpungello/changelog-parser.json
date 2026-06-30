@@ -1,0 +1,450 @@
+{
+    "packages": {
+        "rpungello/changelog-parser": [
+            {
+                "name": "rpungello/changelog-parser",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/changelog-parser.git",
+                    "reference": "75b4fe11c1536b93bb695c5690ee3e87a0325b8a"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/changelog-parser/zipball/75b4fe11c1536b93bb695c5690ee3e87a0325b8a",
+                    "reference": "75b4fe11c1536b93bb695c5690ee3e87a0325b8a",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.1"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "pestphp/pest": "^2.0|^3.0",
+                    "spatie/ray": "^1.28"
+                },
+                "time": "2025-07-22T17:31:15+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\": "src"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\Tests\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Parses CHANGELOG.md files",
+                "homepage": "https://github.com/rpungello/changelog-parser",
+                "keywords": [
+                    "changelog",
+                    "parser",
+                    "rpungello"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/changelog-parser/tree/1.0.0",
+                    "issues": "https://github.com/rpungello/changelog-parser/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/rpungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/changelog-parser",
+                "version": "1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/changelog-parser.git",
+                    "reference": "b2ca4ad4521560a972047f8434ad8f3c4354d887"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/changelog-parser/zipball/b2ca4ad4521560a972047f8434ad8f3c4354d887",
+                    "reference": "b2ca4ad4521560a972047f8434ad8f3c4354d887",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.1"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "pestphp/pest": "^2.0|^3.0",
+                    "spatie/ray": "^1.28"
+                },
+                "time": "2025-07-22T17:49:50+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\": "src"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\Tests\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Parses CHANGELOG.md files",
+                "homepage": "https://github.com/rpungello/changelog-parser",
+                "keywords": [
+                    "changelog",
+                    "parser",
+                    "rpungello"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/changelog-parser/tree/1.1.0",
+                    "issues": "https://github.com/rpungello/changelog-parser/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/rpungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/changelog-parser",
+                "version": "1.2.0",
+                "version_normalized": "1.2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/changelog-parser.git",
+                    "reference": "f3a44948a44c4e73b1205e3229d294f2ccccb6be"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/changelog-parser/zipball/f3a44948a44c4e73b1205e3229d294f2ccccb6be",
+                    "reference": "f3a44948a44c4e73b1205e3229d294f2ccccb6be",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.1"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "pestphp/pest": "^2.0|^3.0",
+                    "spatie/ray": "^1.28"
+                },
+                "time": "2025-09-22T18:39:30+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\": "src"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\Tests\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Parses CHANGELOG.md files",
+                "homepage": "https://github.com/rpungello/changelog-parser",
+                "keywords": [
+                    "changelog",
+                    "parser",
+                    "rpungello"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/changelog-parser/tree/1.2.0",
+                    "issues": "https://github.com/rpungello/changelog-parser/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/rpungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/changelog-parser",
+                "version": "1.3.0",
+                "version_normalized": "1.3.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/changelog-parser.git",
+                    "reference": "a6aa7b96e877303d6aab9b622bd3b67fa1b48ef9"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/changelog-parser/zipball/a6aa7b96e877303d6aab9b622bd3b67fa1b48ef9",
+                    "reference": "a6aa7b96e877303d6aab9b622bd3b67fa1b48ef9",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.1"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "pestphp/pest": "^2.0|^3.0",
+                    "spatie/ray": "^1.28"
+                },
+                "time": "2025-09-22T20:55:27+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\": "src"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\Tests\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Parses CHANGELOG.md files",
+                "homepage": "https://github.com/rpungello/changelog-parser",
+                "keywords": [
+                    "changelog",
+                    "parser",
+                    "rpungello"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/changelog-parser/tree/1.3.0",
+                    "issues": "https://github.com/rpungello/changelog-parser/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/rpungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/changelog-parser",
+                "version": "1.3.1",
+                "version_normalized": "1.3.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/changelog-parser.git",
+                    "reference": "be2102787e904417cec5f1ce1f570e23df54951d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/changelog-parser/zipball/be2102787e904417cec5f1ce1f570e23df54951d",
+                    "reference": "be2102787e904417cec5f1ce1f570e23df54951d",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.1"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "pestphp/pest": "^2.0|^3.0",
+                    "spatie/ray": "^1.28"
+                },
+                "time": "2025-09-23T12:28:19+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\": "src"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\Tests\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Parses CHANGELOG.md files",
+                "homepage": "https://github.com/rpungello/changelog-parser",
+                "keywords": [
+                    "changelog",
+                    "parser",
+                    "rpungello"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/changelog-parser/tree/1.3.1",
+                    "issues": "https://github.com/rpungello/changelog-parser/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/rpungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/changelog-parser",
+                "version": "1.4.0",
+                "version_normalized": "1.4.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/changelog-parser.git",
+                    "reference": "4bbe2f7b43a5d50d5a96e15f704a4e216f2ab506"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/changelog-parser/zipball/4bbe2f7b43a5d50d5a96e15f704a4e216f2ab506",
+                    "reference": "4bbe2f7b43a5d50d5a96e15f704a4e216f2ab506",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.1"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "pestphp/pest": "^2.0|^3.0",
+                    "spatie/ray": "^1.28"
+                },
+                "time": "2025-09-23T13:22:35+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\": "src"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\ChangelogParser\\Tests\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Parses CHANGELOG.md files",
+                "homepage": "https://github.com/rpungello/changelog-parser",
+                "keywords": [
+                    "changelog",
+                    "parser",
+                    "rpungello"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/changelog-parser/tree/1.4.0",
+                    "issues": "https://github.com/rpungello/changelog-parser/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/rpungello"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,921 @@
+{
+    "packages": {
+        "rpungello/laravel-graylog": [
+            {
+                "name": "rpungello/laravel-graylog",
+                "version": "0.1.0",
+                "version_normalized": "0.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-graylog.git",
+                    "reference": "6e8172d4bad8171cf1cc975e32c9141f99dd6c98"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-graylog/zipball/6e8172d4bad8171cf1cc975e32c9141f99dd6c98",
+                    "reference": "6e8172d4bad8171cf1cc975e32c9141f99dd6c98",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0",
+                    "php": "^8.3",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2025-09-04T14:13:34+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Graylog\\GraylogServiceProvider"
+                        ],
+                        "aliases": {
+                            "Graylog": "Rpungello\\Graylog\\Facades\\Graylog"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\": "src/",
+                        "Rpungello\\Graylog\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Laravel package that utilizes the Graylog messages API to search for messages",
+                "homepage": "https://github.com/rpungello/laravel-graylog",
+                "keywords": [
+                    "Rob Pungello",
+                    "laravel",
+                    "laravel-graylog"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-graylog/tree/0.1.0",
+                    "issues": "https://github.com/rpungello/laravel-graylog/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-graylog",
+                "version": "0.2.0",
+                "version_normalized": "0.2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-graylog.git",
+                    "reference": "d97155c82647908e6be5d32679239f9771ca94af"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-graylog/zipball/d97155c82647908e6be5d32679239f9771ca94af",
+                    "reference": "d97155c82647908e6be5d32679239f9771ca94af",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0",
+                    "php": "^8.3",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2025-09-04T17:25:37+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Graylog\\GraylogServiceProvider"
+                        ],
+                        "aliases": {
+                            "Graylog": "Rpungello\\Graylog\\Facades\\Graylog"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\": "src/",
+                        "Rpungello\\Graylog\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Laravel package that utilizes the Graylog messages API to search for messages",
+                "homepage": "https://github.com/rpungello/laravel-graylog",
+                "keywords": [
+                    "Rob Pungello",
+                    "laravel",
+                    "laravel-graylog"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-graylog/tree/0.2.0",
+                    "issues": "https://github.com/rpungello/laravel-graylog/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-graylog",
+                "version": "0.2.1",
+                "version_normalized": "0.2.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-graylog.git",
+                    "reference": "070dd1051b39bf5a0be27e999ae388a2e9257dd4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-graylog/zipball/070dd1051b39bf5a0be27e999ae388a2e9257dd4",
+                    "reference": "070dd1051b39bf5a0be27e999ae388a2e9257dd4",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0",
+                    "php": "^8.3",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2025-09-04T18:24:55+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Graylog\\GraylogServiceProvider"
+                        ],
+                        "aliases": {
+                            "Graylog": "Rpungello\\Graylog\\Facades\\Graylog"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\": "src/",
+                        "Rpungello\\Graylog\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Laravel package that utilizes the Graylog messages API to search for messages",
+                "homepage": "https://github.com/rpungello/laravel-graylog",
+                "keywords": [
+                    "Rob Pungello",
+                    "laravel",
+                    "laravel-graylog"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-graylog/tree/0.2.1",
+                    "issues": "https://github.com/rpungello/laravel-graylog/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-graylog",
+                "version": "0.2.2",
+                "version_normalized": "0.2.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-graylog.git",
+                    "reference": "28cd4b14ac2ac04effec2dc67c6fbab63c17a098"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-graylog/zipball/28cd4b14ac2ac04effec2dc67c6fbab63c17a098",
+                    "reference": "28cd4b14ac2ac04effec2dc67c6fbab63c17a098",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0",
+                    "php": "^8.3",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2025-09-04T18:35:44+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Graylog\\GraylogServiceProvider"
+                        ],
+                        "aliases": {
+                            "Graylog": "Rpungello\\Graylog\\Facades\\Graylog"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\": "src/",
+                        "Rpungello\\Graylog\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Laravel package that utilizes the Graylog messages API to search for messages",
+                "homepage": "https://github.com/rpungello/laravel-graylog",
+                "keywords": [
+                    "Rob Pungello",
+                    "laravel",
+                    "laravel-graylog"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-graylog/tree/0.2.2",
+                    "issues": "https://github.com/rpungello/laravel-graylog/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-graylog",
+                "version": "0.3.0",
+                "version_normalized": "0.3.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-graylog.git",
+                    "reference": "e8551b150e74395ce9a2ab10d660e20258131147"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-graylog/zipball/e8551b150e74395ce9a2ab10d660e20258131147",
+                    "reference": "e8551b150e74395ce9a2ab10d660e20258131147",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0",
+                    "php": "^8.3",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2025-09-05T13:46:06+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Graylog\\GraylogServiceProvider"
+                        ],
+                        "aliases": {
+                            "Graylog": "Rpungello\\Graylog\\Facades\\Graylog"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\": "src/",
+                        "Rpungello\\Graylog\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Laravel package that utilizes the Graylog messages API to search for messages",
+                "homepage": "https://github.com/rpungello/laravel-graylog",
+                "keywords": [
+                    "api",
+                    "graylog",
+                    "laravel",
+                    "logging",
+                    "rpungello",
+                    "search"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-graylog/tree/0.3.0",
+                    "issues": "https://github.com/rpungello/laravel-graylog/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-graylog",
+                "version": "0.3.1",
+                "version_normalized": "0.3.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-graylog.git",
+                    "reference": "8e2ed16cb01440161108f32d2e4d7627c47ec4a4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-graylog/zipball/8e2ed16cb01440161108f32d2e4d7627c47ec4a4",
+                    "reference": "8e2ed16cb01440161108f32d2e4d7627c47ec4a4",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0",
+                    "php": "^8.3",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2025-09-05T15:45:20+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Graylog\\GraylogServiceProvider"
+                        ],
+                        "aliases": {
+                            "Graylog": "Rpungello\\Graylog\\Facades\\Graylog"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\": "src/",
+                        "Rpungello\\Graylog\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Laravel package that utilizes the Graylog messages API to search for messages",
+                "homepage": "https://github.com/rpungello/laravel-graylog",
+                "keywords": [
+                    "api",
+                    "graylog",
+                    "laravel",
+                    "logging",
+                    "rpungello",
+                    "search"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-graylog/tree/0.3.1",
+                    "issues": "https://github.com/rpungello/laravel-graylog/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-graylog",
+                "version": "0.4.0",
+                "version_normalized": "0.4.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-graylog.git",
+                    "reference": "1dbc2ecfb5fd4719523e2afd08310c8d5770b8a0"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-graylog/zipball/1dbc2ecfb5fd4719523e2afd08310c8d5770b8a0",
+                    "reference": "1dbc2ecfb5fd4719523e2afd08310c8d5770b8a0",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0||^13.0",
+                    "php": "^8.3",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^11.0.0||^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2026-03-27T15:21:04+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Graylog\\GraylogServiceProvider"
+                        ],
+                        "aliases": {
+                            "Graylog": "Rpungello\\Graylog\\Facades\\Graylog"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\": "src/",
+                        "Rpungello\\Graylog\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Laravel package that utilizes the Graylog messages API to search for messages",
+                "homepage": "https://github.com/rpungello/laravel-graylog",
+                "keywords": [
+                    "api",
+                    "graylog",
+                    "laravel",
+                    "logging",
+                    "rpungello",
+                    "search"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-graylog/tree/0.4.0",
+                    "issues": "https://github.com/rpungello/laravel-graylog/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-graylog",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-graylog.git",
+                    "reference": "5948ff11bf866cc0261018db063738d8ed752c0b"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-graylog/zipball/5948ff11bf866cc0261018db063738d8ed752c0b",
+                    "reference": "5948ff11bf866cc0261018db063738d8ed752c0b",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0||^13.0",
+                    "php": "^8.3",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^11.0.0||^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2026-06-30T13:51:11+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Graylog\\GraylogServiceProvider"
+                        ],
+                        "aliases": {
+                            "Graylog": "Rpungello\\Graylog\\Facades\\Graylog"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\": "src/",
+                        "Rpungello\\Graylog\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Laravel package that utilizes the Graylog messages API to search for messages",
+                "homepage": "https://github.com/rpungello/laravel-graylog",
+                "keywords": [
+                    "api",
+                    "graylog",
+                    "laravel",
+                    "logging",
+                    "rpungello",
+                    "search"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-graylog/tree/1.0.0",
+                    "issues": "https://github.com/rpungello/laravel-graylog/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-graylog",
+                "version": "1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-graylog.git",
+                    "reference": "26f1678f51ee41e3ba9cc9b9aa7dd922034b2244"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-graylog/zipball/26f1678f51ee41e3ba9cc9b9aa7dd922034b2244",
+                    "reference": "26f1678f51ee41e3ba9cc9b9aa7dd922034b2244",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^11.0||^12.0||^13.0",
+                    "php": "^8.3",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.8",
+                    "orchestra/testbench": "^11.0.0||^10.0.0||^9.0.0",
+                    "pestphp/pest": "^4.0",
+                    "pestphp/pest-plugin-arch": "^4.0",
+                    "pestphp/pest-plugin-laravel": "^4.0"
+                },
+                "time": "2026-06-30T14:11:27+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\Graylog\\GraylogServiceProvider"
+                        ],
+                        "aliases": {
+                            "Graylog": "Rpungello\\Graylog\\Facades\\Graylog"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\": "src/",
+                        "Rpungello\\Graylog\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\Graylog\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Laravel package that utilizes the Graylog messages API to search for messages",
+                "homepage": "https://github.com/rpungello/laravel-graylog",
+                "keywords": [
+                    "api",
+                    "graylog",
+                    "laravel",
+                    "logging",
+                    "rpungello",
+                    "search"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-graylog/tree/1.0.1",
+                    "issues": "https://github.com/rpungello/laravel-graylog/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            }
+        ]
+    }
+}
