@@ -17,7 +17,7 @@ jobs:
         env:
           WORKSPACE_PATH: ${{ github.workspace }}
         run: |
-          docker run --rm -v $WORKSPACE_PATH:/build ghcr.io/composer/satis:latest
+          docker run --rm --user "$(id -u):$(id -g)" -v $WORKSPACE_PATH:/build ghcr.io/composer/satis:latest
       - name: Verify build output
         run: ls -la ${{ github.workspace }}
       - name: Deploy
