@@ -15,8 +15,8 @@ jobs:
         with:
           image: ghcr.io/composer/satis:latest
           options: -v ${{ github.workspace }}:/build
-          run: |
-            satis build /build/satis.json /build/output
+      - name: Verify build output
+        run: ls -la ${{ github.workspace }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
