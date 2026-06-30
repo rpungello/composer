@@ -16,7 +16,7 @@ jobs:
       - name: Build Satis package repository
         env:
           WORKSPACE_PATH: ${{ github.workspace }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.COMPOSER_AUTH_TOKEN }}
         run: |
           docker run --rm \
           --user "$(id -u):$(id -g)" \
