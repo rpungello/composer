@@ -10,11 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - name: Pull Docker image
+        run: |
+          docker pull ghcr.io/composer/satis:latest
       - name: Build Satis package repository
-        uses: addnab/docker-run-action@v3
-        with:
-          image: ghcr.io/composer/satis:latest
-          options: -v ${{ github.workspace }}:/build
+        env:
+          WORKSPACE_PATH: ${{ github.workspace }}
+        run: |
+          docker run --rm -v $WORKSPACE_PATH:/build ghcr.io/composer/satis:latest
       - name: Verify build output
         run: ls -la ${{ github.workspace }}
       - name: Deploy
