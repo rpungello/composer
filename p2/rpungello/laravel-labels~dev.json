@@ -1,0 +1,189 @@
+{
+    "packages": {
+        "rpungello/laravel-labels": [
+            {
+                "name": "rpungello/laravel-labels",
+                "version": "dev-laravel-13-support",
+                "version_normalized": "dev-laravel-13-support",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-labels.git",
+                    "reference": "8382a8bbc088226ea4bf0779ec9114a312b931a4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-labels/zipball/8382a8bbc088226ea4bf0779ec9114a312b931a4",
+                    "reference": "8382a8bbc088226ea4bf0779ec9114a312b931a4",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                    "php": "^8.1",
+                    "rpungello/laravel-string-template": "^3.0|^4.0",
+                    "spatie/color": "^1.5",
+                    "spatie/laravel-package-tools": "^1.9.2",
+                    "tecnickcom/tcpdf": "^6.4"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.8",
+                    "nesbot/carbon": "^2.72|^3.0",
+                    "nunomaduro/collision": "^6.0|^8.1",
+                    "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0|^11.0",
+                    "pestphp/pest": "^1.21|^2.0|^3.0|^4.0",
+                    "pestphp/pest-plugin-laravel": "^2.3|^3.2|^4.0",
+                    "phpunit/phpunit": "^9.5|^10.0|^11.0|^12.0"
+                },
+                "time": "2026-11-05T15:10:49+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\LaravelLabels\\LabelServiceProvider"
+                        ],
+                        "aliases": {
+                            "LaravelLabelPrinter": "Rpungello\\LaraveLabels\\Facades\\LabelPrinter"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\LaravelLabels\\": "src",
+                        "Rpungello\\LaravelLabels\\Database\\Factories\\": "database/factories"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\LaravelLabels\\Tests\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Generate PDF label sheets using Laravel + TCPDF",
+                "homepage": "https://github.com/rpungello/laravel-labels",
+                "keywords": [
+                    "laravel",
+                    "laravel-labels",
+                    "rpungello"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-labels/tree/laravel-13-support",
+                    "issues": "https://github.com/rpungello/laravel-labels/issues"
+                }
+            },
+            {
+                "name": "rpungello/laravel-labels",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-labels.git",
+                    "reference": "ee46c2d9c27a09e1a2151e6497cafa24dbdacd08"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-labels/zipball/ee46c2d9c27a09e1a2151e6497cafa24dbdacd08",
+                    "reference": "ee46c2d9c27a09e1a2151e6497cafa24dbdacd08",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                    "php": "^8.1",
+                    "rpungello/laravel-string-template": "^3.0|^4.0",
+                    "spatie/color": "^1.5",
+                    "spatie/laravel-package-tools": "^1.9.2",
+                    "tecnickcom/tcpdf": "^6.4"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.8",
+                    "nesbot/carbon": "^2.72|^3.0",
+                    "nunomaduro/collision": "^6.0|^8.1",
+                    "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0|^11.0",
+                    "pestphp/pest": "^1.21|^2.0|^3.0|^4.0",
+                    "pestphp/pest-plugin-laravel": "^2.3|^3.2|^4.0",
+                    "phpunit/phpunit": "^9.5|^10.0|^11.0|^12.0"
+                },
+                "time": "2026-11-05T15:23:03+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\LaravelLabels\\LabelServiceProvider"
+                        ],
+                        "aliases": {
+                            "LaravelLabelPrinter": "Rpungello\\LaraveLabels\\Facades\\LabelPrinter"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\LaravelLabels\\": "src",
+                        "Rpungello\\LaravelLabels\\Database\\Factories\\": "database/factories"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\LaravelLabels\\Tests\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Generate PDF label sheets using Laravel + TCPDF",
+                "homepage": "https://github.com/rpungello/laravel-labels",
+                "keywords": [
+                    "laravel",
+                    "laravel-labels",
+                    "rpungello"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-labels/tree/main",
+                    "issues": "https://github.com/rpungello/laravel-labels/issues"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,678 @@
+{
+    "packages": {
+        "rpungello/laravel-csv": [
+            {
+                "name": "rpungello/laravel-csv",
+                "version": "0.1.0",
+                "version_normalized": "0.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-csv.git",
+                    "reference": "51e84218331b2292a9e4e839d2856a556dc345bd"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-csv/zipball/51e84218331b2292a9e4e839d2856a556dc345bd",
+                    "reference": "51e84218331b2292a9e4e839d2856a556dc345bd",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0||^11.0",
+                    "maatwebsite/excel": "^3.1",
+                    "php": "^8.0",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.1.1||^7.10.0",
+                    "orchestra/testbench": "^9.0.0||^8.22.0",
+                    "pestphp/pest": "^2.34",
+                    "pestphp/pest-plugin-arch": "^2.7",
+                    "pestphp/pest-plugin-laravel": "^2.3"
+                },
+                "time": "2025-03-10T16:12:30+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\LaravelCsv\\LaravelCsvServiceProvider"
+                        ],
+                        "aliases": {
+                            "LaravelCsv": "Rpungello\\LaravelCsv\\Facades\\LaravelCsv"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\LaravelCsv\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\LaravelCsv\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-laravel-csv --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Memory-efficient CSV writer for Laravel Excel",
+                "homepage": "https://github.com/rpungello/laravel-csv",
+                "keywords": [
+                    "Rob Pungello",
+                    "csv",
+                    "laravel"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-csv/tree/0.1.0",
+                    "issues": "https://github.com/rpungello/laravel-csv/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-csv",
+                "version": "0.2.0",
+                "version_normalized": "0.2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-csv.git",
+                    "reference": "39491f96dc2df0092e1d792351251cf9796c584a"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-csv/zipball/39491f96dc2df0092e1d792351251cf9796c584a",
+                    "reference": "39491f96dc2df0092e1d792351251cf9796c584a",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0||^11.0",
+                    "maatwebsite/excel": "^3.1",
+                    "php": "^8.0",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.1.1||^7.10.0",
+                    "orchestra/testbench": "^9.0.0||^8.22.0",
+                    "pestphp/pest": "^2.34",
+                    "pestphp/pest-plugin-arch": "^2.7",
+                    "pestphp/pest-plugin-laravel": "^2.3"
+                },
+                "time": "2025-03-10T16:27:18+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\LaravelCsv\\LaravelCsvServiceProvider"
+                        ],
+                        "aliases": {
+                            "LaravelCsv": "Rpungello\\LaravelCsv\\Facades\\LaravelCsv"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\LaravelCsv\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\LaravelCsv\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-laravel-csv --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Memory-efficient CSV writer for Laravel Excel",
+                "homepage": "https://github.com/rpungello/laravel-csv",
+                "keywords": [
+                    "Rob Pungello",
+                    "csv",
+                    "laravel"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-csv/tree/0.2.0",
+                    "issues": "https://github.com/rpungello/laravel-csv/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-csv",
+                "version": "0.3.0",
+                "version_normalized": "0.3.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-csv.git",
+                    "reference": "744ba61582881a4d8263f8a496b1e16f0872c655"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-csv/zipball/744ba61582881a4d8263f8a496b1e16f0872c655",
+                    "reference": "744ba61582881a4d8263f8a496b1e16f0872c655",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0||^11.0",
+                    "maatwebsite/excel": "^3.1",
+                    "php": "^8.0",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.1.1||^7.10.0",
+                    "orchestra/testbench": "^9.0.0||^8.22.0",
+                    "pestphp/pest": "^2.34",
+                    "pestphp/pest-plugin-arch": "^2.7",
+                    "pestphp/pest-plugin-laravel": "^2.3"
+                },
+                "time": "2025-03-10T18:17:59+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\LaravelCsv\\LaravelCsvServiceProvider"
+                        ],
+                        "aliases": {
+                            "LaravelCsv": "Rpungello\\LaravelCsv\\Facades\\LaravelCsv"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\LaravelCsv\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\LaravelCsv\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-laravel-csv --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Memory-efficient CSV writer for Laravel Excel",
+                "homepage": "https://github.com/rpungello/laravel-csv",
+                "keywords": [
+                    "Rob Pungello",
+                    "csv",
+                    "laravel"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-csv/tree/0.3.0",
+                    "issues": "https://github.com/rpungello/laravel-csv/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-csv",
+                "version": "0.4.0",
+                "version_normalized": "0.4.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-csv.git",
+                    "reference": "200694731a75e0af82da017801088a932377c0f2"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-csv/zipball/200694731a75e0af82da017801088a932377c0f2",
+                    "reference": "200694731a75e0af82da017801088a932377c0f2",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0||^11.0",
+                    "maatwebsite/excel": "^3.1",
+                    "php": "^8.0",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.1.1||^7.10.0",
+                    "orchestra/testbench": "^9.0.0||^8.22.0",
+                    "pestphp/pest": "^2.34",
+                    "pestphp/pest-plugin-arch": "^2.7",
+                    "pestphp/pest-plugin-laravel": "^2.3"
+                },
+                "time": "2025-03-10T18:35:19+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\LaravelCsv\\LaravelCsvServiceProvider"
+                        ],
+                        "aliases": {
+                            "LaravelCsv": "Rpungello\\LaravelCsv\\Facades\\LaravelCsv"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\LaravelCsv\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\LaravelCsv\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-laravel-csv --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Memory-efficient CSV writer for Laravel Excel",
+                "homepage": "https://github.com/rpungello/laravel-csv",
+                "keywords": [
+                    "Rob Pungello",
+                    "csv",
+                    "laravel"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-csv/tree/0.4.0",
+                    "issues": "https://github.com/rpungello/laravel-csv/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-csv",
+                "version": "0.5.0",
+                "version_normalized": "0.5.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-csv.git",
+                    "reference": "399032bf592d9fa01ab4b9dba7ea3fc027e3a193"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-csv/zipball/399032bf592d9fa01ab4b9dba7ea3fc027e3a193",
+                    "reference": "399032bf592d9fa01ab4b9dba7ea3fc027e3a193",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0||^11.0||^12.0",
+                    "maatwebsite/excel": "^3.1",
+                    "php": "^8.0",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.1.1||^7.10.0",
+                    "orchestra/testbench": "^9.0.0||^8.22.0||^10.4",
+                    "pestphp/pest": "^2.34||^3.8",
+                    "pestphp/pest-plugin-arch": "^2.7||^3.1",
+                    "pestphp/pest-plugin-laravel": "^2.3||^3.2"
+                },
+                "time": "2025-07-12T18:21:01+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\LaravelCsv\\LaravelCsvServiceProvider"
+                        ],
+                        "aliases": {
+                            "LaravelCsv": "Rpungello\\LaravelCsv\\Facades\\LaravelCsv"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\LaravelCsv\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\LaravelCsv\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-laravel-csv --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Memory-efficient CSV writer for Laravel Excel",
+                "homepage": "https://github.com/rpungello/laravel-csv",
+                "keywords": [
+                    "Rob Pungello",
+                    "csv",
+                    "laravel"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-csv/tree/0.5.0",
+                    "issues": "https://github.com/rpungello/laravel-csv/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            },
+            {
+                "name": "rpungello/laravel-csv",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/rpungello/laravel-csv.git",
+                    "reference": "ff5006c44c468fe5f82c3c49edba185c6a0b62c8"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/rpungello/laravel-csv/zipball/ff5006c44c468fe5f82c3c49edba185c6a0b62c8",
+                    "reference": "ff5006c44c468fe5f82c3c49edba185c6a0b62c8",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^12.0||^13.0",
+                    "maatwebsite/excel": "^4.0",
+                    "php": "^8.0",
+                    "spatie/laravel-package-tools": "^1.16"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.14",
+                    "nunomaduro/collision": "^8.1.1||^7.10.0",
+                    "orchestra/testbench": "^9.0.0||^8.22.0||^10.4||^11.0",
+                    "pestphp/pest": "^2.34||^3.8||^4.0",
+                    "pestphp/pest-plugin-arch": "^2.7||^3.1||^4.0",
+                    "pestphp/pest-plugin-laravel": "^2.3||^3.2||^4.0"
+                },
+                "time": "2026-11-05T14:25:21+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Rpungello\\LaravelCsv\\LaravelCsvServiceProvider"
+                        ],
+                        "aliases": {
+                            "LaravelCsv": "Rpungello\\LaravelCsv\\Facades\\LaravelCsv"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rpungello\\LaravelCsv\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Rpungello\\LaravelCsv\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-laravel-csv --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Rob Pungello",
+                        "email": "rob@rpun.io",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Memory-efficient CSV writer for Laravel Excel",
+                "homepage": "https://github.com/rpungello/laravel-csv",
+                "keywords": [
+                    "Rob Pungello",
+                    "csv",
+                    "laravel"
+                ],
+                "support": {
+                    "source": "https://github.com/rpungello/laravel-csv/tree/1.0.0",
+                    "issues": "https://github.com/rpungello/laravel-csv/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/Rob Pungello"
+                    }
+                ]
+            }
+        ]
+    }
+}

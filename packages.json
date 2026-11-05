@@ -1,15 +1,17 @@
 {
     "packages": [],
     "includes": {
-        "include/all$95c9f21b63dd26bc1ce885a1215d625b54525f17.json": {
-            "sha1": "95c9f21b63dd26bc1ce885a1215d625b54525f17"
+        "include/all$b6594d09abeb8a408a99051a3705e6babdd8ffa9.json": {
+            "sha1": "b6594d09abeb8a408a99051a3705e6babdd8ffa9"
         }
     },
     "metadata-url": "/p2/%package%.json",
     "available-packages": [
         "rpungello/changelog-parser",
         "rpungello/draining-health-check",
+        "rpungello/laravel-csv",
         "rpungello/laravel-graylog",
+        "rpungello/laravel-labels",
         "rpungello/laravel-metabase"
     ]
 }
