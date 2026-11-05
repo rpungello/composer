@@ -5,7 +5,9 @@
     { "type": "vcs", "url": "https://github.com/rpungello/changelog-parser" },
     { "type": "vcs", "url": "https://github.com/rpungello/laravel-graylog" },
     { "type": "vcs", "url": "https://github.com/rpungello/laravel-metabase" },
-    { "type": "vcs", "url": "https://github.com/rpungello/draining-health-check" }
+    { "type": "vcs", "url": "https://github.com/rpungello/draining-health-check" },
+    { "type": "vcs", "url": "https://github.com/rpungello/laravel-csv" },
+    { "type": "vcs", "url": "https://github.com/rpungello/laravel-labels" }
   ],
   "require-all": true
 }
